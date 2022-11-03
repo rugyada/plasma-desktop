@@ -6,7 +6,7 @@ Version: 5.25.90
 Release: 70
 Source0: http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Source100: %{name}.rpmlintrc
-#Patch4: plasma-desktop-5.5.3-use-openmandriva-settings.patch
+#Patch4: use-openmandriva-settings.patch
 Summary: KDE Frameworks 5 Plasma-desktop framework
 URL: http://kde.org/
 License: GPL
