@@ -2,11 +2,11 @@
 %define stable %([ "$(echo %{version} |cut -d. -f3)" -ge 80 ] && echo -n un; echo -n stable)
 
 Name: plasma-desktop
-Version: 5.25.90
-Release: 70
+Version: 5.26.2
+Release: 69
 Source0: http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Source100: %{name}.rpmlintrc
-#Patch4: use-openmandriva-settings.patch
+Patch4: use-openmandriva-settings.patch
 Summary: KDE Frameworks 5 Plasma-desktop framework
 URL: http://kde.org/
 License: GPL
@@ -107,7 +107,7 @@ BuildRequires: xdg-user-dirs
 Requires: openmandriva-kde-translation
 Requires: plasma-framework
 Requires: kirigami2
-# (crazy) crahses without
+# (crazy) crashes without
 Requires: qqc2-desktop-style >= %{version}
 Recommends: distro-release-desktop-Plasma
 # (tpg) needed for kcm_nightcolor
